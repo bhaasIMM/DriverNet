@@ -1,6 +1,9 @@
 ## Runs the greedy algorithm on randomized input to produce random result list of drivers for significance test
 ## outputFolder = NULL -> no output any file
 ## outputFolder = "" -> current folder
+#
+#' @importFrom doParallel 
+#
 computeRandomizedResult <- function(patMutMatrix, patOutMatrix, influenceGraph, geneNameList, outputFolder = NULL, printToConsole = FALSE, numberOfRandomTests = 500,  weighted = FALSE, purturbGraph = FALSE, purturbData = TRUE, num_cores=1) {
   if (weighted) {
     stop("Weighted algorithm is not implemented.")
