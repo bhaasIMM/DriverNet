@@ -1,4 +1,3 @@
-library('doParallel')
 ## Runs the greedy algorithm on randomized input to produce random result list of drivers for significance test
 ## outputFolder = NULL -> no output any file
 ## outputFolder = "" -> current folder
